@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+// import axios from 'axios';
 import './App.css';
+import HomeHOC from './HOC/HomeHOC';
+import Master from './components/master/Master';
+import Home from './pages/Home';
+import Restaurant from './pages/Restaurant';
+import ScrollToTop from './components/backToTop/ScrollToTop';
+//import CSS files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <ScrollToTop />
+      <HomeHOC path="/" exact component={Home} />
+      <HomeHOC path="/:type" exact component={Master} />
+      <HomeHOC path="/restaurant/:id" exact component={Restaurant} />
+    </>
+  )
 }
 
 export default App;
