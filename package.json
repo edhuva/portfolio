@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^9.8.8",
     "postcss-cli": "^10.1.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
