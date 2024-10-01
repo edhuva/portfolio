@@ -40,18 +40,18 @@ const Menu = () => (
 
 // Menu
 const MenuSm = () => (
-  <ul className='flex-1 justify-between list-none items-center py-2 px-2'>
-      <Link to="/"><li className='border border-gray-600 rounded-md hover:border-blue-400 px-1 py-1 my-2' >Home</li></Link>
-      <Link to="/computerrepairs"><li className='border border-gray-600 rounded-md hover:border-blue-400 px-1 py-1 my-2'>Investor Relations</li></Link>
-      <Link to="/parts"><li className='border border-gray-600 rounded-md hover:border-blue-400 px-1 py-1 my-2'>Add restaurant</li></Link>
+  <ul className='flex-1 justify-between list-none items-center pt-2 pb-6 px-2'>
+      <Link to="/"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5' >Home</li></Link>
+      <Link to="/computerrepairs"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>Investor Relations</li></Link>
+      <Link to="/parts"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>Add restaurant</li></Link>
   </ul>
 )
 
 const MenuMd = () => (
-  <ul className='flex-1 justify-between list-none items-center py-2 px-2'>
-      <Link to="/"><li className='border border-gray-600 rounded-md hover:border-blue-400 px-1 py-2 my-3' >Home</li></Link>
-      <Link to="computerrepairs"><li className='border border-gray-600 rounded-md hover:border-blue-400 px-1 py-2 my-2'>Investor Relations</li></Link>
-      <Link to="parts"><li className='border border-gray-600 rounded-md hover:border-blue-400 px-1 py-2 my-2'>Add restaurant</li></Link>
+  <ul className='flex-1  justify-between list-none items-center pt-2 pb-6 px-2'>
+      <Link to="/"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5' >Home</li></Link>
+      <Link to="computerrepairs"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5'>Investor Relations</li></Link>
+      <Link to="parts"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5'>Add restaurant</li></Link>
   </ul>
 )
 
@@ -60,7 +60,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const NavSm = (
-    <div className='flex justify-between w-full'>
+    <div className='flex justify-between '>
             <Link to='/'>
               <div className='flex justify-between w-30 h-12 text-zomatoCol-400'>
                   <h2 className='text-blue-400 text-2xl font-bold'>MealMover</h2>
@@ -79,7 +79,7 @@ const Navbar = () => {
                   }
 
                   {toggleMenu && (
-                      <div className='col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 w-full border  border-gray-900 shadow-md rounded-md'>
+                      <div className='w-full h-full col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 pb-3 w-full border  border-gray-900 shadow-md rounded-md'>
                         <div className=''>
                           <MenuSm />
                         </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
   )
 
   const NavMd = (
-    <div className='flex justify-between w-full'>
+    <div className='flex justify-between '>
               <Link to='/'>
                 <motion.div variants={fadeIn("left", 0.2)}
             initial="hidden"
@@ -117,7 +117,7 @@ const Navbar = () => {
                   }
 
                   {toggleMenu && (
-                      <div className='col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 w-full border  border-gray-900 shadow-md rounded-md'>
+                      <div className=' w-full h-full col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 pb-3w-full border  border-gray-900 shadow-md rounded-md'>
                         <div className=''>
                           <MenuMd />
                         </div>
