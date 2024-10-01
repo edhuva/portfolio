@@ -43,7 +43,7 @@ const MenuSm = () => (
   <ul className='flex-1 justify-between list-none items-center pt-2 pb-6 px-2'>
       <Link to="/"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5' >Home</li></Link>
       <Link to="/computerrepairs"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>Investor Relations</li></Link>
-      <Link to="/parts"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>Add restaurant</li></Link>
+      <Link to="/parts"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>Add restaurant</li></Link>
   </ul>
 )
 
@@ -79,11 +79,11 @@ const Navbar = () => {
                   }
 
                   {toggleMenu && (
-                      <div className='w-full h-full col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 pb-3 w-full border  border-gray-900 shadow-md rounded-md'>
+                      <div className='w-full h-full col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 pb-3  border  border-gray-900 shadow-md rounded-md'>
                         <div className=''>
                           <MenuSm />
                         </div>
-                        <div className='flex justify-center gap-4 py-3'>
+                        <div className='flex flex-col justify-center gap-4 pt-1 px-2'>
                           <button className='border border-blue-300 text-blue-400 py-2 px-3 rounded-full hover:border-blue-400 hover:text-white' >Login</button>
                           <button className='border bg-zomatoCol-400 text-white py-2 px-3 rounded-full hover:border-blue-400 hover:bg-gray-900' >SignUp</button>
                         </div>
@@ -117,13 +117,19 @@ const Navbar = () => {
                   }
 
                   {toggleMenu && (
-                      <div className=' w-full h-full col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 pb-3w-full border  border-gray-900 shadow-md rounded-md'>
+                      <div className='  w-full h-full col-span-1 bg-gray-900 justify-start items-start text-center absolute top-23 right-1 z-10 mt-3 pb-3w-full border  border-gray-900 shadow-md rounded-md'>
                         <div className=''>
                           <MenuMd />
                         </div>
-                        <div className='flex justify-center gap-4 py-3'>
-                          <button className='border border-blue-300 text-blue-400 py-2 px-3 rounded-full hover:border-blue-400 hover:text-white' >Login</button>
-                          <button className='border bg-zomatoCol-400 text-white py-2 px-3 rounded-full hover:border-blue-400 hover:bg-gray-900' >SignUp</button>
+                        {/* <div className='flex flex-1 bg-yellow-100 justify-center  py-3'> */}
+                        <div className='flex justify-center items-center gap-4 pt-1 px-2'>
+                           <div className='flex-1 '> 
+                            <button className=' w-80 border border-blue-300 text-blue-400 py-2 px-3 rounded-full hover:border-blue-400 hover:text-white ' >Login</button>
+                           </div>
+                          <div className='flex-1 '>
+                            <button className='w-80 border bg-zomatoCol-400 text-white py-2 px-3 rounded-full hover:border-blue-400 hover:bg-gray-900' >SignUp</button>
+                          </div>
+                          
                         </div>
                       </div>
                   )}
