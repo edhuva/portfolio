@@ -27,7 +27,7 @@ const Footer = () => {
                     <label  className='hover:shadow-md' htmlFor='email'>
                         <input className='py-1 px-3 border-2 w-96' id='email' name='email' type='text' autoComplete='off' placeholder='Email'  />
                     </label>
-                    <button type='button' className='font-bold bg-gray-50 rounded-md border-2 p-1 hover:shadow-md'>SUBSCRIBE</button>
+                    <button type='button' className='font-bold bg-gray-50 rounded-md border-2 p-1 hover:shadow-md  hover:bg-zomatoCol-400 hover:text-white'>SUBSCRIBE</button>
                 </form>
             </div>
         </div>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .slick-prev {
   left: 3% !important;
   z-index: 1;
@@ -10,6 +11,13 @@
 .slick-next {
   right: 3% !important;
   z-index: 1;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* COLOR */
+  --BGCOLOR: #0F172A;
 }
 
 @keyframes appear {
@@ -44,6 +52,57 @@
 
 .blockHeaderAnim { 
   animation: appearX 1s linear;
+}
+
+.invest-bg-img {
+  background-image: url('./assets/inverstor1.avif');
+}
+
+.md-addrestaurant-bg-img {
+  height: 400px;
+  background-image: url('./assets/addRes6.jpg');
+  background-color: var(--BGCOLOR);
+  background-position: center;
+  background-blend-mode:normal;
+  background-size: cover;
+}
+
+.bg-img-text {
+  /* filter: brightness(100%); */
+  background-color: #000000a4;
+  /* background-color: rgba(185, 185, 240, 0.151); */
+}
+
+.sm-addrestaurant-bg-img {
+  height: 300px;
+  background-image: url('./assets/addRes2.avif');
+  background-size: cover;
+  background-position: top right;
+  background-blend-mode: multiply;
+  /* background-size: cover; */
+  /* background-color: var(--BGCOLOR); */
+}
+
+.md-investors-bg-img {
+  height: 400px;
+  background-image: url('./assets/addRes7.jpg');
+  background-color: var(--BGCOLOR);
+  background-position: center;
+  background-blend-mode:normal;
+  background-size: cover;
+}
+
+.sm-investors-bg-img {
+  height: 300px;
+  background-image: url('./assets/addRes7.jpg');
+  background-size: cover;
+  background-position: top right;
+  background-blend-mode: multiply;
+}
+
+.bg-img-text {
+  display: absolute;
+  z-index: 1;
 }
 /*
 module.exports = {

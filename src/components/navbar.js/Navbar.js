@@ -33,8 +33,8 @@ import { fadeIn } from '../../variants'
 const Menu = () => (
   <ul className='flex justify-between gap-8 pt-2 text-gray-600'>
       <Link to="/"><li className='hover:text-blue-400 border-t-2'>Home</li></Link>
-      <Link to="computerrepairs"><li className='hover:text-blue-400 border-t-2'>Investor Relations</li></Link>
-      <Link to="parts"><li className='hover:text-blue-400 border-t-2'>Add restaurant</li></Link>
+      <Link to="/public/investors"><li className='hover:text-blue-400 border-t-2'>Investor Relations</li></Link>
+      <Link to="/public/partner-with-us"><li className='hover:text-blue-400 border-t-2'>Add restaurant</li></Link>
   </ul>
 )
 
@@ -42,16 +42,16 @@ const Menu = () => (
 const MenuSm = () => (
   <ul className='flex-1 justify-between list-none items-center pt-2 pb-6 px-2'>
       <Link to="/"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5' >Home</li></Link>
-      <Link to="/computerrepairs"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>Investor Relations</li></Link>
-      <Link to="/parts"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>Add restaurant</li></Link>
+      <Link to="/public/investors"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>Investor Relations</li></Link>
+      <Link to="/public/partner-with-us"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>Add restaurant</li></Link>
   </ul>
 )
 
 const MenuMd = () => (
   <ul className='flex-1  justify-between list-none items-center pt-2 pb-6 px-2'>
       <Link to="/"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5' >Home</li></Link>
-      <Link to="computerrepairs"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5'>Investor Relations</li></Link>
-      <Link to="parts"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5'>Add restaurant</li></Link>
+      <Link to="/public/investors"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5'>Investor Relations</li></Link>
+      <Link to="/public/partner-with-us"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-5'>Add restaurant</li></Link>
   </ul>
 )
 
