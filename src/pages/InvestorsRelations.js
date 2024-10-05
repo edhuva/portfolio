@@ -59,7 +59,7 @@ const InvestorsRelations = () => {
     <>
       {content}
 
-      <div className='flex flex-col  justify-center md:py-8 mt-10 mb-28 md:my-10'>
+      <div className='flex flex-col  justify-center md:py-8 mt-10 mb-28 md:my-10 bg-gray-50'>
         <h3 className='font-bold text-center text-4xl  pt-2 md:text-5xl pb-3 md:pb-5 mb-7'>Our core offerings </h3>
         <div className='flex flex-wrap md:flex-row  justify-center gap-10'>
           <InvestorsRelationsCard title='Food Delivery' parag='Food ordering and delivery platform where customers can search and discover local restaurants, order food, and have it delivered reliably and quickly' subTitle='10.3 million' subParag='Avg, monthly transacting customers' />
