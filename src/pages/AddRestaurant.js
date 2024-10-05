@@ -107,7 +107,7 @@ const AddRestaurant = () => {
             </ul>
           </div>
           <div>
-            <button type='button' className='font-bold hover:bg-edCol-700 rounded-xl border-2 py-3 px-8 hover:shadow-md  bg-zomatoCol-400 text-white'>SUBSCRIBE</button>
+            <button type='button' className='font-bold hover:bg-edCol-700 rounded-xl border-2 py-3 px-8 hover:shadow-md  bg-zomatoCol-400 text-white'>Apply Now</button>
           </div>
         <div>
       </div>

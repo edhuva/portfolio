@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { Link } from 'react-router-dom'
 import { FaArrowAltCircleLeft } from 'react-icons/fa'
+import InvestorsRelationsCard from '../components/investorsRelations/InvestorsRelationsCard'
 
 const InvestorsRelations = () => {
 
@@ -57,6 +58,19 @@ const InvestorsRelations = () => {
   return (
     <>
       {content}
+
+      <div className='flex flex-col  justify-center md:py-8 mt-10 mb-28 md:my-10'>
+        <h3 className='font-bold text-center text-4xl  pt-2 md:text-5xl pb-3 md:pb-5 mb-7'>Our core offerings </h3>
+        <div className='flex flex-wrap md:flex-row  justify-center gap-10'>
+          <InvestorsRelationsCard title='Food Delivery' parag='Food ordering and delivery platform where customers can search and discover local restaurants, order food, and have it delivered reliably and quickly' subTitle='10.3 million' subParag='Avg, monthly transacting customers' />
+         
+          <InvestorsRelationsCard title='Quick Commerce' parag='Quick commerce platform where customers can order everyday needs across thousands of products and have tehem delivered within minutes' subTitle='15.3 million' subParag='Avg, monthly transacting customers' />
+
+          <InvestorsRelationsCard title='Hyperpure' parag='Hyperpure is a B2B platform suppling high quality food ingredients and other products' subTitle='9 cities' subParag='cities present in' />
+
+          <InvestorsRelationsCard title='Going-out' parag='Going-out enables discovery and ticketing of offline experiences such as in-restaurant dining and live events such as MealMover Show' subTitle='50% Revenue' subParag='Going-out Revenue' />
+        </div>
+      </div>
     </>
     
   )
