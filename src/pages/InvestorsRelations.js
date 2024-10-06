@@ -46,7 +46,7 @@ const InvestorsRelations = () => {
                 whileInView={"show"}   viewport={{once: false, amount: 0.7}} 
                 className=' flex justify-center mt-10'
               >
-              <h3 className='text-white pt-6 pb-10 text-4xl font-bold'  >Inverstors.</h3>
+              <h3 className='text-white pt-6 pb-10 text-4xl font-bold'  >Investors.</h3>
             </motion.div>
           </div>
         </div>
@@ -64,11 +64,11 @@ const InvestorsRelations = () => {
         <div className='flex flex-wrap md:flex-row  justify-center gap-10'>
           <InvestorsRelationsCard title='Food Delivery' parag='Food ordering and delivery platform where customers can search and discover local restaurants, order food, and have it delivered reliably and quickly' subTitle='10.3 million' subParag='Avg, monthly transacting customers' />
          
-          <InvestorsRelationsCard title='Quick Commerce' parag='Quick commerce platform where customers can order everyday needs across thousands of products and have tehem delivered within minutes' subTitle='15.3 million' subParag='Avg, monthly transacting customers' />
+          <InvestorsRelationsCard title='Quick Commerce' parag='Quick commerce platform where customers can order everyday needs across thousands of products and have them delivered within minutes' subTitle='15.3 million' subParag='Avg, monthly transacting customers' />
 
           <InvestorsRelationsCard title='Going-out' parag='Going-out enables discovery and ticketing of offline experiences such as in-restaurant dining and live events such as MealMover Show' subTitle='50% Revenue' subParag='Going-out Revenue' />
 
-          <InvestorsRelationsCard title='Hyperpure' parag='Hyperpure is a B2B platform suppling high quality food ingredients and other products' subTitle='9 cities' subParag='cities present in' />
+          <InvestorsRelationsCard title='Hyperpure' parag='Hyperpure is a B2B platform supplying high quality food ingredients and other products' subTitle='9 cities' subParag='cities present in' />
         </div>
       </div>
     </>

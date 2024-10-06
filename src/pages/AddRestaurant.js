@@ -62,12 +62,12 @@ const AddRestaurant = () => {
           <motion.div variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}   viewport={{once: false, amount: 0.7}}>
-              <p className='mb-6'>And get ads wort R500. Valid for new restaurant partners in selected cities</p>
+              <p className='mb-6'>And get ads worth R500. Valid for new restaurant partners in selected cities</p>
             </motion.div>
           
           <div className='flex flex-col justify-center items-center gap-4 pt-1 px-2 '>
             <div className='flex-1 '> 
-            <button className=' w-80 border border-blue-300 text-blue-400 py-2 px-3 rounded-full hover:border-blue-400 hover:text-white ' >Rgister your restaurant</button>
+            <button className=' w-80 border border-blue-300 text-blue-400 py-2 px-3 rounded-full hover:border-blue-400 hover:text-white ' >Register your restaurant</button>
             </div>
             <div className='flex-1 '>
               <button className='w-80 border bg-zomatoCol-400 text-white py-2 px-3 rounded-full hover:border-blue-400 hover:bg-gray-900' >Login to view your existing rastaurants</button>
