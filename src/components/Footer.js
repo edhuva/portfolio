@@ -1,18 +1,102 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { NavLink, Link } from 'react-router-dom';
+import { PulseLoader } from 'react-spinners'
 import { FaMedal } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
+import { toast } from 'react-toastify';
+import { subscribe } from '../utils/Utils'
+import Notify from './notify/Notify';
+
+//input regex
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 const Footer = () => {
+
+    const [email, setEmail] = useState('')
+    const [validEmail, setValidEmail] = useState(false)
+    const [isSuccess, setIsSuccess] = useState(false)
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(false)
+    // const [isError, setIsError] = useState(false)
+
+    useEffect(() => {
+        setValidEmail(EMAIL_REGEX.test(email))
+    }, [email])
+
+    useEffect(() => {
+        console.log('***')
+        console.log(isSuccess)
+        if (isSuccess) {
+            setEmail('')
+            toast('✅ Successfuly Subcribed Email!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                color: "blue"
+              });
+        }
+        return () => toast()
+    }, [isSuccess])
+
+    useEffect(() => {
+        console.log('%%%')
+        console.log(error)
+        if (error) {
+            setEmail('')
+            toast(error, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                color: "blue"
+              });
+        }
+        return () => toast()
+    }, [error])
+
+    const handleEmailInput = e => setEmail(e.target.value)
+
+    const canSave = [email].every(Boolean) && !loading
+
+    const handleSubscribe = async () => {
+        setError(null)
+        setLoading(true)
+        setIsSuccess(false)
+        try {
+            await subscribe({email, validEmail})
+            setLoading(false)
+            setIsSuccess(true)
+        } catch (error) {
+            setError(error.message)
+            setLoading(false)
+        }
+     
+    }
+
+    let contentloading;
+    contentloading = loading && <PulseLoader color="#81AFDD" style={{margin: '0em 0em 0em 5em'}} />;
 
     const created = new Date().toLocaleString('en-SA', { year: 'numeric' });
 
   return (
-    <footer className='hidden flex-col lg:block border-t-1 bg-gray-50 px-36 pt-32 rounded'>
+    <>
+        {contentloading}
+        <Notify/>
+
+        <footer className='hidden flex-col lg:block border-t-1 bg-gray-50 px-36 pt-32 rounded'>
          <div className='flex justify-between'>
             <motion.div variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -22,12 +106,12 @@ const Footer = () => {
                 <FaMedal />
             </motion.div>
             <div className='bg-red-600 flex rounded-md'>
-                <form className='bg-gray-100 flex justify-center flex-wrap  text-lg items-center text-gray-600'>
+                <form className='bg-gray-100 flex justify-center flex-wrap  text-lg items-center text-gray-600' onSubmit={(e) => e.preventDefault()}>
                     <FontAwesomeIcon className='text-5xl ' icon={faEnvelope} />
                     <label  className='hover:shadow-md' htmlFor='email'>
-                        <input className='py-1 px-3 border-2 w-96' id='email' name='email' type='text' autoComplete='off' placeholder='Email'  />
+                        <input className='py-1 px-3 border-2 w-96' id='email' name='email' type='text' autoComplete='off' placeholder='email' value={email} onChange={handleEmailInput} />
                     </label>
-                    <button type='button' className='font-bold bg-gray-50 rounded-md border-2 p-1 hover:shadow-md  hover:bg-zomatoCol-400 hover:text-white'>SUBSCRIBE</button>
+                    <button type='button' className= {`font-bold  rounded-md border-2 p-1 hover:shadow-md bg-white  ${canSave ? 'bg-zomatoCol-500 text-white' : 'text-gray-300'}`} title='Subscribe' disabled={!canSave} onClick={handleSubscribe}>SUBSCRIBE</button>
                 </form>
             </div>
         </div>
@@ -112,7 +196,9 @@ const Footer = () => {
             </div>
         </div>
     </footer>
+    </>
   )
+    
 }
 
 export default Footer

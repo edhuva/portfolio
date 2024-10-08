@@ -14,7 +14,7 @@ const ProcessSteps = () => {
         <h3 className='text-gray-500 pt-6 pb-10 text-5xl font-bold'>How it works?</h3>
       </motion.div>
   
-      <div classname='appear'>
+      <div className='appear'>
         <div className='flex flex-wrap gap-6 ' >
           { 
             ProcessCardData.map( process => (

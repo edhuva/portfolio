@@ -116,3 +116,6 @@ module.exports = {
     },
 }
 }*/
+
+/* <h3 className={`text-white text-2xl font-bold ${props.isDark ? 'text-white' : 'text-gray-800'}`}>{props.title}</h3>
+<p className={`text-white text-sm ${props.isDark ? 'text-white' : 'text-gray-800'}`}>{props.subtitle}</p> */
