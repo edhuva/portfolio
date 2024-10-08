@@ -7,7 +7,7 @@ export function subscribe({email, validEmail}) {
             if (validEmail === true && !!email) {
                 resolve()
             } else {
-                reject(new Error('Invalid email!'))
+                reject(new Error('Invalid email'))
             }
         }, delay)
     })

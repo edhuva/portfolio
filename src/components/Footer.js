@@ -21,15 +21,12 @@ const Footer = () => {
     const [isSuccess, setIsSuccess] = useState(false)
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
-    // const [isError, setIsError] = useState(false)
 
     useEffect(() => {
         setValidEmail(EMAIL_REGEX.test(email))
     }, [email])
 
     useEffect(() => {
-        console.log('***')
-        console.log(isSuccess)
         if (isSuccess) {
             setEmail('')
             toast('✅ Successfuly Subcribed Email!', {
@@ -48,11 +45,9 @@ const Footer = () => {
     }, [isSuccess])
 
     useEffect(() => {
-        console.log('%%%')
-        console.log(error)
         if (error) {
             setEmail('')
-            toast(error, {
+            toast(`😟 ${error}❗`, {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
