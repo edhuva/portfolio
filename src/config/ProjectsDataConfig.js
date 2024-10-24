@@ -21,6 +21,16 @@ import mealmover_6 from '../assets/mealmover-6.png';
 import mealmover_7 from '../assets/mealmover-7.png';
 import mealmover_8 from '../assets/mealmover-8.png';
 import mealmover_9 from '../assets/mealmover-9.png';
+import portfolio_1 from '../assets/portfolio-1.png';
+import portfolio_2 from '../assets/portfolio-2.png';
+import portfolio_3 from '../assets/portfolio-3.png';
+import portfolio_4 from '../assets/portfolio-4.png';
+import portfolio_5 from '../assets/portfolio-5.png';
+import portfolio_6 from '../assets/portfolio-6.png';
+import portfolio_7 from '../assets/portfolio-7.png';
+import portfolio_8 from '../assets/portfolio-8.png';
+import portfolio_9 from '../assets/portfolio-9.png';
+import portfolio_10 from '../assets/portfolio-10.png';
 
 const Project_Data = [
     {
@@ -49,9 +59,20 @@ const Project_Data = [
             mealmover_1, mealmover_2, mealmover_3, mealmover_4, mealmover_5, mealmover_6, mealmover_7, mealmover_8, mealmover_9
         ],
         subTitle: 'A web application which provides marketing platform for local restaurants businesses to market their products, and provides Food ordering and delivery platform where customers can search and discover local restaurants, order food, and have it delivered reliably and quickly',
+        techStack: [ 'REACT','REDUX', 'NODE', 'EXPRESS', 'MONGODB','TAILWIND', 'RKT QUERY' ],
         techStack: [ 'REACT', 'REDUX', 'NODE', 'EXPRESS', 'MONGODB','TAILWIND', 'JWT', 'RKT QUERY' ],
         github:'https://github.com/edhuva/MealMover',
         site:'https://mealmover.onrender.com/'
+    },
+    {
+        title: 'My Portfolio',
+        project_images: [
+            portfolio_1, portfolio_2, portfolio_3, portfolio_4, portfolio_5, portfolio_6, portfolio_7, portfolio_8, portfolio_9, portfolio_10
+        ],
+        subTitle: 'Not much to say here! This project just gave me a good excuse to spend a weekend practicing with MERN Stack and Tailwind',
+
+        github:'https://github.com/edhuva/portfolio',
+        site:'https://edwin-portfolio.onrender.com/'
     }
 ]
 
