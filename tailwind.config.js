@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {   
@@ -45,13 +45,26 @@ module.exports = {
             // 800: '#0a2942',
             // 900: '#000f1a',
           }
-        }
+      },
+       animation: {
+          'spin-slow': 'spin 3s linear infinite',
+          animation: 'typing 5s infinite',
+        },
+        keyframes: {
+          typing: {
+            // '0%, 100%': { transform: 'rotate(-3deg)' },
+            // '50%': { transform: 'rotate(3deg)' },
+            from: { width: 0}
+          }
+        },
+
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
+  
 }
 //websites
 //colorhunt website -> to get color parlet

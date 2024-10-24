@@ -1,19 +1,17 @@
-//Book my show planning
+//Portfolio planning
 //-> we need a reusable carousel
-//-> Hero Carousel
-//-> Common Carousel
-//-> Cast carousel
+//-> Project Carousel
 
-//Pages
-//-> Home page
-//-> Movie page
-//-> Categories page
-//-> Auth page
-//-> Razor Payment gateway
+//Containers
+//-> Header
+//-> Projects
+//-> About
+//-> Tools
+//-> Contact
+//-> Footer
 
 //Plan how we are building it
 
-//->Layouts
-//->Routes
-//->Pages
+//->Layout
+//->Containers
 //->Components

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 .slick-prev {
   left: 3% !important;
@@ -16,8 +17,23 @@
 /* || VARIABLES */
 
 :root {
-  /* COLOR */
-  --BGCOLOR: #0F172A;
+  --font-family: 'Manrope', sans-serif;
+
+  /* --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);  #7a32c7 */
+  --gradient-text: linear-gradient(89.97deg, #4c128a 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+
+  /* Themes */
+  --color-darktheme-bg:#000000;
+  --color-darktheme-text: #f5f5f5;
+  --color-lighttheme-bg:#f5f5f5;
+  --color-lighttheme-text: rgba(0, 0, 0, 0.76);
 }
 
 @keyframes appear {
@@ -54,68 +70,59 @@
   animation: appearX 1s linear;
 }
 
-.invest-bg-img {
-  background-image: url('./assets/inverstor1.avif');
-}
-
-.md-addrestaurant-bg-img {
+.header-img-lg {
+  width: 400px;
   height: 400px;
-  background-image: url('./assets/addRes6.jpg');
   background-color: var(--BGCOLOR);
-  background-position: center;
-  background-blend-mode:normal;
-  background-size: cover;
-}
-
-.bg-img-text {
-  /* filter: brightness(100%); */
-  background-color: #000000a4;
-  /* background-color: rgba(185, 185, 240, 0.151); */
-}
-
-.sm-addrestaurant-bg-img {
-  height: 300px;
-  background-image: url('./assets/addRes2.avif');
+  background-image: url('./assets/coder1.jpeg');
   background-size: cover;
   background-position: top right;
-  background-blend-mode: multiply;
-  /* background-size: cover; */
-  /* background-color: var(--BGCOLOR); */
+  background-blend-mode: normal;
+  border-radius: 50%;
 }
 
-.md-investors-bg-img {
-  height: 400px;
-  background-image: url('./assets/addRes7.jpg');
-  background-color: var(--BGCOLOR);
-  background-position: center;
-  background-blend-mode:normal;
-  background-size: cover;
-}
-
-.sm-investors-bg-img {
+.header-img-md {
+  width: 300px;
   height: 300px;
-  background-image: url('./assets/addRes7.jpg');
+  background-color: var(--BGCOLOR);
+  background-image: url('./assets/coder1.jpeg');
   background-size: cover;
   background-position: top right;
-  background-blend-mode: multiply;
+  background-blend-mode: normal;
+  border-radius: 50%;
 }
+
+.welcome_h2 {
+  white-space: nowrap;
+  animation: typing 5s infinite;
+}
+
+.welcome-h2-text {
+  background: var(--gradient-text); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0}
+}
+
 
 .bg-img-text {
   display: absolute;
   z-index: 1;
 }
-/*
-module.exports = {
-    style: {
-      postcss: {
-        plugins: [
-          require('tailwindcss'),
-          require('autoprefixer'),
-        ],
-      },
-    },
-}
-}*/
 
-/* <h3 className={`text-white text-2xl font-bold ${props.isDark ? 'text-white' : 'text-gray-800'}`}>{props.title}</h3>
-<p className={`text-white text-sm ${props.isDark ? 'text-white' : 'text-gray-800'}`}>{props.subtitle}</p> */
+.slide {
+  transform: scale(0.7);
+  transition: ease-in ;
+  opacity: 1;
+}
+
+.active-slide {
+  transform: scale(1.1);
+  opacity: 1;
+}
