@@ -59,7 +59,6 @@ const Project_Data = [
             mealmover_1, mealmover_2, mealmover_3, mealmover_4, mealmover_5, mealmover_6, mealmover_7, mealmover_8, mealmover_9
         ],
         subTitle: 'A web application which provides marketing platform for local restaurants businesses to market their products, and provides Food ordering and delivery platform where customers can search and discover local restaurants, order food, and have it delivered reliably and quickly',
-        techStack: [ 'REACT','REDUX', 'NODE', 'EXPRESS', 'MONGODB','TAILWIND', 'RKT QUERY' ],
         techStack: [ 'REACT', 'REDUX', 'NODE', 'EXPRESS', 'MONGODB','TAILWIND', 'JWT', 'RKT QUERY' ],
         github:'https://github.com/edhuva/MealMover',
         site:'https://mealmover.onrender.com/'
@@ -70,7 +69,7 @@ const Project_Data = [
             portfolio_1, portfolio_2, portfolio_3, portfolio_4, portfolio_5, portfolio_6, portfolio_7, portfolio_8, portfolio_9, portfolio_10
         ],
         subTitle: 'Not much to say here! This project just gave me a good excuse to spend a weekend practicing with MERN Stack and Tailwind',
-
+        techStack: [ 'REACT','REDUX', 'NODE', 'EXPRESS', 'MONGODB','TAILWIND', 'RKT QUERY' ],
         github:'https://github.com/edhuva/portfolio',
         site:'https://edwin-portfolio.onrender.com/'
     }
