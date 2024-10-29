@@ -38,7 +38,7 @@ const Project_Data = [
         project_images: [
             kgtechv1_1, kgtechv1_2, kgtechv1_3, kgtechv1_4, kgtechv1_5, kgtechv1_6 
         ],
-        subTitle: 'A web application which provides business management repair note system for KGTech company, mainly improving its business functionaly by replacing the current manually sticky note system.',
+        subTitle: 'A web application which provides business repair note management system for KGTech company, mainly improving its business functionaly by replacing the manual sticky note system.',
         techStack: [ 'REACT', 'REDUX', 'NODE', 'EXPRESS', 'MONGODB', 'JWT', 'CSS', 'RKT QUERY' ],
         github:'https://github.com/edhuva/kgtechrepairs',
         site:'https://kgtechrepairs.onrender.com/'
@@ -48,7 +48,7 @@ const Project_Data = [
         project_images: [
             kgtechv2_1, kgtechv2_2, kgtechv2_3, kgtechv2_4, kgtechv2_5, kgtechv2_6, kgtechv2_7, kgtechv2_8
         ],
-        subTitle: 'A web application which provides business management repair orders system for KGTech company, mainly improving kgtech repair version 1, adding more functionality and features.',
+        subTitle: 'A web application which provides business management repair order system for KGTech company, mainly improving kgtech repair version 1 app, by adding more functionality and features.',
         techStack: [ 'REACT', 'REDUX', 'NODE', 'EXPRESS', 'MONGODB','CSS', 'JWT', 'AWS S3', 'RKT QUERY' ],
         github:'https://github.com/edhuva/kgtechrepairs-v2',
         site:'https://kgtechrepairs-v2.onrender.com/'
@@ -58,7 +58,7 @@ const Project_Data = [
         project_images: [
             mealmover_1, mealmover_2, mealmover_3, mealmover_4, mealmover_5, mealmover_6, mealmover_7, mealmover_8, mealmover_9
         ],
-        subTitle: 'A web application which provides marketing platform for local restaurants businesses to market their products, and provides Food ordering and delivery platform where customers can search and discover local restaurants, order food, and have it delivered reliably and quickly',
+        subTitle: 'A web application which provides marketing platform for local restaurant businesses, to market their products. Provides Food ordering and delivery platform where customers can search and discover local restaurants, order food, and have it delivered reliably and quickly',
         techStack: [ 'REACT', 'REDUX', 'NODE', 'EXPRESS', 'MONGODB','TAILWIND', 'JWT', 'RKT QUERY' ],
         github:'https://github.com/edhuva/MealMover',
         site:'https://mealmover.onrender.com/'
