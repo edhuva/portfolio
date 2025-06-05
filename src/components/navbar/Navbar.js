@@ -25,16 +25,11 @@ const Menu = () => (
 // Menu
 const MenuSm = () => (
   <ul className='flex-1 justify-between list-none items-center text-white dark:text-blue-400 pt-2 pb-6 px-2'>
-      {/* <Link to="#header"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400  px-1 py-3 my-3.5' >Home</li></Link>
-      <Link to="#projects"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400  px-1 py-3 my-3.5' >Projects</li></Link>
-      <Link to="#about"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>About</li></Link>
-      <Link to="#tools"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>Tools</li></Link>
-      <Link to="#contact"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>contact</li></Link> */}
       <a href="#header"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400  px-1 py-3 my-3.5' >Home</li></a>
       <a href="#projects"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400  px-1 py-3 my-3.5' >Projects</li></a>
       <a href="#about"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 py-3 my-3.5'>About</li></a>
       <a href="#tools"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>Tools</li></a>
-      <a href="#contact"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>contact</li></a>
+      <a href="#contact"><li className='border-t border-b border-gray-600 rounded-md hover:border-blue-400 px-1 pt-3 py-3 mt-3.5 mb-1'>Contact</li></a>
   </ul>
 )
 
