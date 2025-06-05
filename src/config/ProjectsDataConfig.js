@@ -25,14 +25,18 @@ import mealmover_10 from '../assets/mealmover-10.PNG';
 import mealmover_11 from '../assets/mealmover-11.PNG';
 import portfolio_1 from '../assets/portfolio-1.PNG';
 import portfolio_2 from '../assets/portfolio-2.PNG';
-// import portfolio_3 from '../assets/portfolio-3.png';
-// import portfolio_4 from '../assets/portfolio-4.png';
-// import portfolio_5 from '../assets/portfolio-5.png';
-// import portfolio_6 from '../assets/portfolio-6.png';
-// import portfolio_7 from '../assets/portfolio-7.png';
-// import portfolio_8 from '../assets/portfolio-8.png';
-// import portfolio_9 from '../assets/portfolio-9.png';
-// import portfolio_10 from '../assets/portfolio-10.png';
+import portfolio_3 from '../assets/portfolio-3.PNG';
+import portfolio_4 from '../assets/portfolio-4.PNG';
+import portfolio_5 from '../assets/portfolio-5.PNG';
+import portfolio_6 from '../assets/portfolio-6.PNG';
+import portfolio_7 from '../assets/portfolio-7.PNG';
+import portfolio_8 from '../assets/portfolio-8.PNG';
+import portfolio_9 from '../assets/portfolio-9.PNG';
+import portfolio_10 from '../assets/portfolio-10.PNG';
+import portfolio_11 from '../assets/portfolio-11.PNG';
+import portfolio_12 from '../assets/portfolio-12.PNG';
+import portfolio_13 from '../assets/portfolio-13.PNG';
+import portfolio_14 from '../assets/portfolio-14.PNG';
 import stiffler_1 from '../assets/stiffler-1.PNG';
 import stiffler_2 from '../assets/stiffler-2.PNG';
 import stiffler_3 from '../assets/stiffler-3.PNG';
@@ -88,8 +92,7 @@ const Project_Data = [
     {
         title: 'My Portfolio',
         project_images: [
-            // portfolio_1, portfolio_2, portfolio_3, portfolio_4, portfolio_5, portfolio_6, portfolio_7, portfolio_8, portfolio_9, portfolio_10
-            portfolio_1, portfolio_2
+            portfolio_1, portfolio_2, portfolio_3, portfolio_4, portfolio_5, portfolio_6, portfolio_7, portfolio_8, portfolio_9, portfolio_10, portfolio_11, portfolio_12, portfolio_13, portfolio_14
         ],
         subTitle: 'Not much to say here! This project just gave me a good excuse to spend a weekend practicing with MERN Stack and Tailwind',
         techStack: [ 'REACT','REDUX', 'NODE', 'EXPRESS', 'MONGODB','TAILWIND', 'RKT QUERY' ],
