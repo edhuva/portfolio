@@ -30,6 +30,6 @@ export const AboutDetailData = [
     },
     {
         title: '* MSI - 2024',
-        subTitle: 'Maths & Science Infinit (Physical Science Educator) - Teaching Physical Science and Mathematics to grade 10 - 12 matric learners at Nzululwazi High School. Nentoring students and conducting experiments. '
+        subTitle: 'Maths & Science Infinit (Physical Science Educator) - Teaching Physical Science and Mathematics to grade 10 - 12 matric learners at Nzululwazi High School. Mentoring students and conducting experiments. '
     }
 ]
