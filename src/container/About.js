@@ -11,10 +11,12 @@ const About = () => {
   return (
     <div className='flex flex-col  mx-2 lg:mx-28' id="about" >
       <div className='hidden md:block '>
-      <motion.h2 variants={fadeIn("left", 0.8)}
+        <motion.h2 variants={fadeIn("left", 0.8)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once: false, amount: 0.7}} className='font-bold md:text-5xl lg:text-6xl tracking-wide text-center lg:mb-16'>About</motion.h2>
+            viewport={{once: false, amount: 0.7}} className='font-bold md:text-5xl lg:text-6xl tracking-wide text-center lg:mb-16'>
+              About
+          </motion.h2>
       </div>
 
       <div className='md:hidden'>
@@ -26,7 +28,7 @@ const About = () => {
         <Link to='https://github.com/edhuva' className='hover:text-blue-500 dark:hover:text-blue-500'>
           <h3 ><FontAwesomeIcon icon={faGithub} /></h3>
         </Link>
-        <Link tohttps:'https://x.com/EdwinMatema' className='hover:text-blue-500 dark:hover:text-blue-500'>
+        <Link to='https://x.com/EdwinMatema' className='hover:text-blue-500 dark:hover:text-blue-500'>
           <h3><FontAwesomeIcon icon={faXTwitter} /></h3>
         </Link>
         <Link to='https://www.linkedin.com/in/edwin-matema-68101516a' className='hover:text-blue-500 dark:hover:text-blue-500 '>
@@ -49,7 +51,6 @@ const About = () => {
           ))
         }
       </div>
-
     </div>
   )
 }
