@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import AboutDetail from '../components/aboutDetail/AboutDetail';
 import { AboutDetailData } from '../config/AboutDetailDataConfig';
 
@@ -26,11 +26,14 @@ const About = () => {
         <Link to='https://github.com/edhuva' className='hover:text-blue-500 dark:hover:text-blue-500'>
           <h3 ><FontAwesomeIcon icon={faGithub} /></h3>
         </Link>
-        <Link to='https://x.com/EdwinMatema?t=BCvPx9aQsCyprPLTN23KIQ&s=09' className='hover:text-blue-500 dark:hover:text-blue-500'>
+        <Link tohttps:'https://x.com/EdwinMatema' className='hover:text-blue-500 dark:hover:text-blue-500'>
           <h3><FontAwesomeIcon icon={faXTwitter} /></h3>
         </Link>
-        <Link to='https://www.Linkedin.com/in/edwin-matema-68101516a?utm_source=share&utm_campaign=sharevia&utm_content=profile&utm_medium=android_app' className='hover:text-blue-500 dark:hover:text-blue-500 '>
+        <Link to='https://www.linkedin.com/in/edwin-matema-68101516a' className='hover:text-blue-500 dark:hover:text-blue-500 '>
           <h3><FontAwesomeIcon icon={faLinkedin} /></h3>
+        </Link>
+        <Link to='https://www.youtube.com/@EdhuvaTechCode' className='hover:text-blue-500 dark:hover:text-blue-500 '>
+          <h3><FontAwesomeIcon icon={faYoutube} /></h3>
         </Link>
         </div>
       </div>
