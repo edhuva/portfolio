@@ -40,7 +40,7 @@ const About = () => {
 
       <div className=' flex flex-col justify-center mt-9 md:mt-20 mb-20 md:mb-36'>
         <div>
-          <h2 className='text-xl md:text-2xl font-semibold tracking-wider text-center px-1 md:px-5 lg:px-10 '>I'm a Full Stack Developer who's been building responsive, robust, and scalable industry utilized applications since my final year of university. I have +2 years of experience in freelancing. My technical expertise includes JavaScript, TypeScript, Python, SQL, Html, CSS3, Bootstrap, Tailwind, React, Node.js, Django, Redux, RKT Query, AWS, MongoDB, Mysql, Firebase, version control - Git and DevOps. I excel in dynamic, collaborative environment, where creativity, continuous improvement, and innovation are encouraged.</h2>
+          <h2 className='text-xl md:text-2xl font-semibold tracking-wider text-center px-1 md:px-5 lg:px-10 '>I am a Full Stack Developer with over 2 years of freelancing experience, building responsive, robust, and scalable applications since my final year of university. My technical expertise includes JavaScript, TypeScript, Python, SQL, HTML, CSS3, Bootstrap, Tailwind, React, Node.js, Django, Redux, RTK Query, AWS, MongoDB, MySQL, Firebase, Git, and DevOps. I thrive in dynamic and collaborative environments where creativity, continuous improvement, and innovation are encouraged.</h2>
         </div>
 
         {
